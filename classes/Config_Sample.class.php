@@ -1,7 +1,7 @@
 <?php
  
 /**
- * Configuration class
+ * Configuration class -- COPY THIS FILE to: Config.class.php
  */
 
 class Config
