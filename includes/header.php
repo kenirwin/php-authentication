@@ -16,14 +16,14 @@
         <?php if (Auth::getInstance()->isLoggedIn()): ?>
 
           <?php if (Auth::getInstance()->isAdmin()): ?>
-            <li><a href="/admin/users">Admin</a></li>
+            <li><a href="./admin/users">Admin</a></li>
           <?php endif; ?>
-          <li><a href="/profile.php">Profile</a></li>
-          <li><a href="/logout.php">Logout</a></li>
+          <li><a href="./profile.php">Profile</a></li>
+          <li><a href="./logout.php">Logout</a></li>
 
         <?php else: ?>
 
-          <li><a href="/login.php">Login</a></li>
+          <li><a href="./login.php">Login</a></li>
 
         <?php endif; ?>
 
