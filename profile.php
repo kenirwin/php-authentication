@@ -23,7 +23,7 @@ include('includes/header.php');
   <dl class="uk-description-list-horizontal">
     <dt>Name</dt>
     <dd><?php echo htmlspecialchars($user->name); ?></dd>
-    <dt>email address</dt>
+    <dt>Email address</dt>
     <dd><?php echo htmlspecialchars($user->email); ?></dd>
   </dl>
     

@@ -47,7 +47,7 @@ include('includes/header.php');
 
 <form method="post" class="uk-form uk-form-horizontal">
   <div class="uk-form-row">
-    <label for="email" class="uk-form-label">email address</label>
+    <label for="email" class="uk-form-label">Email address</label>
     <div class="uk-form-controls">
       <input id="email" name="email" value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>" type="email" autofocus="autofocus" required="required" />
     </div>

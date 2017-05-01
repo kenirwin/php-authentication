@@ -49,7 +49,7 @@ include('includes/header.php');
   </div>
 
   <div class="uk-form-row">
-    <label for="email" class="uk-form-label">email address</label>
+    <label for="email" class="uk-form-label">Email address</label>
     <div class="uk-form-controls">
       <input id="email" name="email" required="required" type="email" value="<?php echo isset($user) ? htmlspecialchars($user->email) : ''; ?>" />
     </div>
