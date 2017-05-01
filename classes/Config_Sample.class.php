@@ -14,6 +14,8 @@ class Config
         SMTP_HOST = '',
         SMTP_USER = '',
         SMTP_PASS = '',
+        SMTP_PORT = 25; // may vary
+        SMTP_SENDER = 'Name <from@example.com>';
         REDIR_PATH = '';
 
 }
