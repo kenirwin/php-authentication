@@ -12,8 +12,9 @@ Auth::getInstance()->requireGuest();
 
 // Process the submitted form
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+  ob_start(); //added to handly mysterious output of SMTP code to the screen
   Auth::getInstance()->sendPasswordReset($_POST['email']);
+  ob_end_clean(); //clean the buffer
   $message_sent = true;
 }
 
