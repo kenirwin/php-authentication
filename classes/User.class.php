@@ -698,8 +698,8 @@ class User
   private function _sendActivationEmail($token)
   {
     // Note hardcoded protocol
-    $url = 'http://'.$_SERVER['HTTP_HOST'].'/activate_account.php?token=' . $token;
-
+    $path = Config::REDIR_PATH;
+    $url = 'http://'.$_SERVER['HTTP_HOST'].$path .'/activate_account.php?token=' . $token;
     $body = <<<EOT
 
 <p>Please click on the following link to activate your account.</p>

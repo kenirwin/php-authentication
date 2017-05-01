@@ -212,7 +212,8 @@ class Auth
       if ($user->startPasswordReset()) {
 
         // Note hardcoded protocol
-        $url = 'http://'.$_SERVER['HTTP_HOST'].'/reset_password.php?token=' . $user->password_reset_token;
+	$path = Config::REDIR_PATH;
+        $url = 'http://'.$_SERVER['HTTP_HOST'].$path.'/reset_password.php?token=' . $user->password_reset_token;
 
         $body = <<<EOT
 
