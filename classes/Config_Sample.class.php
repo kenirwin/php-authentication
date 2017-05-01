@@ -13,6 +13,7 @@ class Config
         DB_PASS = '',
         SMTP_HOST = '',
         SMTP_USER = '',
-        SMTP_PASS = '';
+        SMTP_PASS = '',
+        REDIR_PATH = '';
 
 }

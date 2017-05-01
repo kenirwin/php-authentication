@@ -18,6 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   if (empty($user->errors)) {
 
     // Redirect to signup success page
+    print "redirecting";
+    //    var_dump($user);
+    // var_dump($user->errors);
     Util::redirect('/signup_success.php');
   }
 }
